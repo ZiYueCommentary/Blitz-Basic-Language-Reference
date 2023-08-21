@@ -1,6 +1,6 @@
 # 自定类型
 
-## 什么是自定类型？
+## 什么是自定类型？ <a href="#what-are-they" id="what-are-they"></a>
 
 **自定类型是你最好的朋友。**它被用于创建拥有相同参数的对象的“集合”，并且快速轻松地进行交互。
 
@@ -30,7 +30,7 @@
 
 在上面的例子中，当老板让你把椅子挪动一格的时候，你可能会叫苦连天——这活可不少！但是在 Blitz 中，我们可以用四行代码让所有的 `Chair` 对象调整到新位置（利用 `For ... Each` 命令）。
 
-## 定义自定类型
+## 定义自定类型 <a href="#defining-a-type" id="defining-a-type"></a>
 
 使用 `Type` 关键字定义自定类型，例如：
 
@@ -52,7 +52,7 @@ Type MyType
 End Type 
 ```
 
-## 创建自定类型实例
+## 创建自定类型实例 <a href="#creating-a-type-instance" id="creating-a-type-instance"></a>
 
 您可以在创建变量或数组的名称之后用 “`.`+类型名称”的方式创建自定类型的变量或数组。例如：
 
@@ -76,7 +76,7 @@ mine\x=100
 Print mine\x
 ```
 
-## 销毁自定类型实例
+## 销毁自定类型实例 <a href="#destroying-a-type-instance" id="destroying-a-type-instance"></a>
 
 当您不再需要一个对象的时候，您应该使用 `Delete` 命令将其删除。例如：
 
@@ -86,7 +86,7 @@ Delete mine
 
 这将释放对象所使用的内存。
 
-## 检测是否存在
+## 检测是否存在 <a href="#determining-existance" id="determining-existance"></a>
 
 特殊关键字 `Null` 被用于表示不存在的对象。如果对象尚未用 `New` 进行初始化，或者已被 `Delete` 进行删除，则该对象不存在。例如：
 
@@ -114,7 +114,7 @@ doesn't exist!
 
 每个自定类型都有一个属于自己的对象列表，称为“类型列表”。使用 `New` 创建对象时，创建的对象将自动添加到类型列表中。使用 `Delete` 释放对象时，对象将从列表中移除。类型列表是动态的——一旦实例被销毁，它在集合中就会被删除，其他的对象就会在集合中“上移”。
 
-## 类型列表迭代
+## 类型列表迭代 <a href="#iteration-through-type-lists" id="iteration-through-type-lists"></a>
 
 `First`、`Last`、`After` 和 `Before` 运算符允许您访问类型列表。`First` 运算符会返回类型列表开头的对象。例如：
 

@@ -81,11 +81,11 @@ End Select
 
 如果 Select 表达式中的所有 Case 都不匹配的话，则执行可选的 `Default` 中的语句。
 
-## 退出循环
+## 退出循环 <a href="#breaking-out-of-a-loop" id="breaking-out-of-a-loop"></a>
 
 `Exit` 命令可以用于中断任何 `For ... Next`、`While ... Wend`、`Repeat ... Until` 或 `Repeat ... Forever` 循环。
 
-## 导入文件
+## 导入文件 <a href="#using-includes" id="using-includes"></a>
 
 Blitz 还支持 `Include` 命令。Include 命令允许将其他源文件导入当前源文件，作为主程序的一部分。Include 命令后必须跟随一个被引号包括起来的文件名。例如：
 
